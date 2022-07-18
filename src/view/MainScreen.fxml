@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="650.0" prefWidth="850.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.CustomersController">
+    <children>
+        <Label layoutX="82.0" layoutY="381.0" text="Customer ID" />
+        <Label layoutX="115.0" layoutY="422.0" text="Name" />
+        <Label layoutX="109.0" layoutY="460.0" prefHeight="17.0" prefWidth="55.0" text="Country" />
+        <Label layoutX="122.0" layoutY="506.0" text="State" />
+        <Label layoutX="537.0" layoutY="402.0" text="Address" />
+        <Label layoutX="526.0" layoutY="443.0" text="Post Code" />
+        <Label layoutX="503.0" layoutY="484.0" text="Phone Number" />
+        <TextField fx:id="custIdField" editable="false" layoutX="174.0" layoutY="377.0" promptText="Auto-Generated" />
+        <TextField fx:id="custNameField" layoutX="174.0" layoutY="418.0" />
+        <TextField fx:id="custAddyField" layoutX="602.0" layoutY="398.0" />
+        <TextField fx:id="custPostField" layoutX="602.0" layoutY="439.0" />
+        <TextField fx:id="custPhoneField" layoutX="602.0" layoutY="480.0" />
+        <ComboBox fx:id="custCountryField" layoutX="174.0" layoutY="456.0" onAction="#onCountrySelected" prefHeight="25.0" prefWidth="161.0" />
+        <ComboBox fx:id="custDivisionField" layoutX="174.0" layoutY="502.0" prefHeight="25.0" prefWidth="161.0" />
+        <TableView fx:id="custTable" layoutX="16.0" layoutY="37.0" onMouseClicked="#onCustySelected" prefHeight="326.0" prefWidth="819.0">
+            <columns>
+                <TableColumn fx:id="custIdCol" prefWidth="89.0" text="ID" />
+                <TableColumn fx:id="custNameCol" prefWidth="156.0" text="Name" />
+                <TableColumn fx:id="custAddressCol" prefWidth="210.0" text="Address" />
+                <TableColumn fx:id="custPostCodeCol" prefWidth="101.0" text="Postal Code" />
+                <TableColumn fx:id="custPhoneCol" prefWidth="130.0" text="Phone Number" />
+                <TableColumn fx:id="custDivIdCol" prefWidth="132.0" text="Division ID" />
+            </columns>
+        </TableView>
+        <Button fx:id="addCustBtn" layoutX="115.0" layoutY="590.0" mnemonicParsing="false" onAction="#onAddCust" text="Add Customer" />
+        <Button fx:id="editCustBtn" layoutX="239.0" layoutY="590.0" mnemonicParsing="false" onAction="#onEditCust" text="Edit Customer" />
+        <Button fx:id="delCustBtn" layoutX="371.0" layoutY="590.0" mnemonicParsing="false" onAction="#onDelCust" text="Delete Customer" />
+        <Button fx:id="clearFormBtn" layoutX="683.0" layoutY="527.0" mnemonicParsing="false" onAction="#onClearForm" text="Clear Form" />
+        <Button fx:id="apptsBtn" layoutX="513.0" layoutY="590.0" mnemonicParsing="false" onAction="#onAppts" text="Appointments" />
+        <Button fx:id="reportsBtn" layoutX="639.0" layoutY="590.0" mnemonicParsing="false" onAction="#onReports" text="Reports" />
+        <Label layoutX="387.0" layoutY="14.0" text="Customer Info" />
+    </children>
+</AnchorPane>
+

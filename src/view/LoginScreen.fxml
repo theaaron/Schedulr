@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controller.LoginScreenController">
+    <children>
+        <TextField fx:id="usernameField" layoutX="220.0" layoutY="141.0" />
+        <TextField fx:id="passwordField" layoutX="220.0" layoutY="193.0" />
+        <Label fx:id="userLabel" alignment="CENTER" layoutX="219.0" layoutY="124.0" prefHeight="17.0" prefWidth="160.0" text="Username" />
+        <Label fx:id="passLabel" alignment="CENTER" layoutX="220.0" layoutY="176.0" prefHeight="17.0" prefWidth="160.0" text="Password" />
+        <Button fx:id="loginButton" alignment="CENTER" layoutX="252.0" layoutY="234.0" mnemonicParsing="false" onAction="#onLogin" prefHeight="26.0" prefWidth="97.0" text="Login" textAlignment="CENTER" />
+        <Label fx:id="locationLabel" alignment="CENTER_RIGHT" layoutX="209.0" layoutY="292.0" prefHeight="17.0" prefWidth="97.0" text="Location: " />
+        <Label fx:id="currentLocation" layoutX="314.0" layoutY="292.0" prefHeight="17.0" prefWidth="97.0" text="Label" />
+        <Label fx:id="timeZoneLabel" alignment="CENTER_RIGHT" layoutX="207.0" layoutY="328.0" prefHeight="17.0" prefWidth="97.0" text="Time Zone:" />
+        <Label fx:id="currentTimeZone" layoutX="314.0" layoutY="328.0" prefHeight="17.0" prefWidth="97.0" text="Label" />
+    </children>
+</AnchorPane>
